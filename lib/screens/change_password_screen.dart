@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../state/auth_service.dart';
 import '../utils/validators.dart';
 import '../widgets/password_field.dart';
@@ -19,7 +18,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   final _next = TextEditingController();
   final _confirm = TextEditingController();
   bool _saving = false;
-  String? _currentError; 
+  String? _currentError;
 
   @override
   void dispose() {

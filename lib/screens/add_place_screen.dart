@@ -1,17 +1,13 @@
-
 import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
-
 import '../config.dart';
 import '../data/places.dart';
 import '../models/picked_location.dart';
 import '../models/place.dart';
 import '../utils/geo.dart';
 import 'map_picker_screen.dart';
-
 
 class AddPlaceScreen extends StatefulWidget {
   const AddPlaceScreen({super.key});

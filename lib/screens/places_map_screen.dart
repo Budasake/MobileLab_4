@@ -1,14 +1,10 @@
-// lib/screens/places_map_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
-
 import '../config.dart';
 import '../data/places.dart';
 
-/// Бие даан ажил: бүх газрыг marker-ээр харуулж, marker дарахад
-/// дэлгэрэнгүй дэлгэц нээгдэнэ.
 class PlacesMapScreen extends StatelessWidget {
   const PlacesMapScreen({super.key});
 

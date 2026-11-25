@@ -1,7 +1,5 @@
-// lib/screens/settings_screen.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../state/auth_service.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -25,7 +23,7 @@ class SettingsScreen extends StatelessWidget {
         ],
       ),
     );
-    if (ok == true) auth.logout(); // router redirect → /login
+    if (ok == true) auth.logout();
   }
 
   @override

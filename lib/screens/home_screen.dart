@@ -1,7 +1,5 @@
-// lib/screens/home_screen.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../data/places.dart';
 import '../models/place.dart';
 import '../state/ratings.dart';
@@ -93,17 +91,13 @@ class _HomeScreenState extends State<HomeScreen> {
             title: const Text('TRAVEL APP-д тавтай морил'),
             actions: [
               IconButton(
-                icon: Icon(_sortByRating
-                    ? Icons.star
-                    : Icons.star_outline),
+                icon: Icon(_sortByRating ? Icons.star : Icons.star_outline),
                 tooltip: 'Үнэлгээгээр эрэмбэлэх',
-                onPressed: () =>
-                    setState(() => _sortByRating = !_sortByRating),
+                onPressed: () => setState(() => _sortByRating = !_sortByRating),
               ),
               IconButton(
-                icon: Icon(_season == 'Бүгд'
-                    ? Icons.filter_list
-                    : Icons.filter_alt),
+                icon: Icon(
+                    _season == 'Бүгд' ? Icons.filter_list : Icons.filter_alt),
                 tooltip: 'Улирлаар шүүх',
                 onPressed: _pickSeason,
               ),

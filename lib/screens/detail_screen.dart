@@ -179,10 +179,10 @@ class PlaceDetailView extends StatelessWidget {
       children: [
         imageSection,
         rateSection,
-        seasonSection, 
-        locationSection, 
-        descriptionSection, 
-        statsSection, 
+        seasonSection,
+        locationSection,
+        descriptionSection,
+        statsSection,
       ],
     );
   }

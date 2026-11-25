@@ -1,15 +1,12 @@
-// lib/screens/map_picker_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
-
 import '../config.dart';
 import '../models/picked_location.dart';
 import '../services/geocoding_service.dart';
 import '../utils/geo.dart';
 
-/// Газрын зургийн дэлгэцийн тохиргоо (go_router-ийн `extra`-гаар дамжина).
 class MapPickerArgs {
   const MapPickerArgs({this.initial, this.readOnly = false, this.title});
 
@@ -18,7 +15,6 @@ class MapPickerArgs {
   final String? title;
 }
 
-/// OpenStreetMap дээр байршил хайх, дарж тэмдэглэх дэлгэц.
 class MapPickerScreen extends StatefulWidget {
   const MapPickerScreen({super.key, this.args = const MapPickerArgs()});
 

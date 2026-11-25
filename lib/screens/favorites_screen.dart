@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../data/places.dart';
 import '../state/favorites.dart';
 import '../widgets/place_image.dart';
@@ -18,7 +17,8 @@ class FavoritesScreen extends StatelessWidget {
           final list = places.where((p) => ids.contains(p.id)).toList();
           if (list.isEmpty) {
             return const Center(
-              child: Text('Дуртай газар алга. Дэлгэрэнгүй дэлгэц дээрх ♡-г дарна уу.'),
+              child: Text(
+                  'Дуртай газар алга. Дэлгэрэнгүй дэлгэц дээрх ♡-г дарна уу.'),
             );
           }
           return ListView(

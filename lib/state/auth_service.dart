@@ -1,16 +1,17 @@
 import 'package:flutter/foundation.dart';
+
 class AuthService extends ChangeNotifier {
   static const defaultPassword = 'Mongol2021';
 
   bool _loggedIn = false;
   String? _email;
-  String _password = defaultPassword; 
+  String _password = defaultPassword;
 
   bool get loggedIn => _loggedIn;
   String? get email => _email;
 
   Future<bool> login(String email, String password) async {
-    await Future.delayed(const Duration(seconds: 1)); 
+    await Future.delayed(const Duration(seconds: 1));
     _loggedIn = password == _password;
     _email = _loggedIn ? email : null;
     notifyListeners();
