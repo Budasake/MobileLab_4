@@ -62,7 +62,6 @@ class PlaceDetailView extends StatelessWidget {
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
 
-    // 1. Зураг + нэр + үнэлгээ (зураг дээр давхарласан)
     final imageSection = Stack(
       children: [
         PlaceImage(
@@ -127,7 +126,6 @@ class PlaceDetailView extends StatelessWidget {
       ],
     );
 
-    // 2. "Энэ газрыг үнэлэх" карт
     final rateSection = ValueListenableBuilder<Map<String, int>>(
       valueListenable: userRatings,
       builder: (context, ratings, _) {
@@ -139,7 +137,6 @@ class PlaceDetailView extends StatelessWidget {
       },
     );
 
-    // 3. Товч мэдээлэл (аймаг, зай, улирал)
     final statsSection = Padding(
       padding: const EdgeInsets.all(16),
       child: Row(
@@ -163,10 +160,8 @@ class PlaceDetailView extends StatelessWidget {
       ),
     );
 
-    // 4. Улирлын карт
     final seasonSection = _SeasonCard(season: place.bestSeason);
 
-    // 5. Байршил
     final locationSection = place.hasLocation
         ? ListTile(
             leading: const Icon(Icons.my_location),
@@ -178,13 +173,11 @@ class PlaceDetailView extends StatelessWidget {
           )
         : const SizedBox.shrink();
 
-    // 6. Тайлбар
     final descriptionSection = Padding(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
       child: Text(place.description, style: text.bodyLarge),
     );
 
-    // Дарааллыг эндээс солино. Одоо: 1 ба 3 солигдсон.
     return ListView(
       children: [
         imageSection, // 1
@@ -247,7 +240,6 @@ class _Stat extends StatelessWidget {
       );
 }
 
-/// Улирлын тайлбар карт: температур, үйл ажиллагаа, зөвлөгөө.
 class _SeasonCard extends StatelessWidget {
   const _SeasonCard({required this.season});
 

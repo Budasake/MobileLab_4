@@ -11,8 +11,6 @@ import '../widgets/place_card.dart';
 import '../widgets/place_image.dart';
 import 'detail_screen.dart';
 
-/// Нүүр: нэрээр хайх, улирлаар шүүх, үнэлгээгээр эрэмбэлэх.
-/// Лаб 3: LayoutBuilder — 2/3 багана, ≥ 840 dp үед master–detail.
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

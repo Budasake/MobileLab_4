@@ -1,4 +1,3 @@
-// lib/screens/favorites_screen.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -6,7 +5,6 @@ import '../data/places.dart';
 import '../state/favorites.dart';
 import '../widgets/place_image.dart';
 
-/// Дуртай газруудын жагсаалт. Устгах товчоор хасна.
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({super.key});
 

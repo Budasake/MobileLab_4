@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 
 import '../state/auth_service.dart';
 
-/// Арын дэвсгэр: сэдвийн өнгөнөөс (primary → secondary → tertiary) градиент.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 

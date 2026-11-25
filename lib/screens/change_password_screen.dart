@@ -6,7 +6,6 @@ import '../state/auth_service.dart';
 import '../utils/validators.dart';
 import '../widgets/password_field.dart';
 
-/// Тохиргоо → Нууц үг солих. Нууц үгийн хүчийг индикатороор харуулна.
 class ChangePasswordScreen extends StatefulWidget {
   const ChangePasswordScreen({super.key});
 

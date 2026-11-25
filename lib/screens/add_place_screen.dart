@@ -1,4 +1,4 @@
-// lib/screens/add_place_screen.dart
+
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
@@ -12,7 +12,7 @@ import '../models/place.dart';
 import '../utils/geo.dart';
 import 'map_picker_screen.dart';
 
-/// Шинэ газрын форм: нэр, бүс нутаг/байршил, зай, тайлбар, улирал, зураг.
+
 class AddPlaceScreen extends StatefulWidget {
   const AddPlaceScreen({super.key});
 
