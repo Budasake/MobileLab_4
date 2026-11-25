@@ -1,14 +1,11 @@
-// lib/services/geocoding_service.dart
+
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-
 import '../config.dart';
 import '../models/picked_location.dart';
 
-/// Хаяг хайхад гарсан алдаа — хэрэглэгчид ойлгомжтой мессежтэй.
 class GeocodingException implements Exception {
   const GeocodingException(this.message);
   final String message;
@@ -16,8 +13,6 @@ class GeocodingException implements Exception {
   String toString() => message;
 }
 
-/// OpenStreetMap-ийн Nominatim: секундэд 1-ээс олон хүсэлт илгээхгүй,
-/// User-Agent илгээнэ, үр дүнг кэшилнэ.
 class Geocoding {
   const Geocoding._();
 

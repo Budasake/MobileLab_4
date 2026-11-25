@@ -1,11 +1,8 @@
-// lib/utils/geo.dart
 import 'dart:math';
 
-/// Улаанбаатар (Сүхбаатарын талбай) — зай тооцох эхлэл цэг.
 const ubLatitude = 47.9189;
 const ubLongitude = 106.9176;
 
-/// Хоёр цэгийн хоорондох шулуун зай (км) — Haversine томьёо.
 double haversineKm(double lat1, double lng1, double lat2, double lng2) {
   const earthRadiusKm = 6371.0;
   double rad(double deg) => deg * pi / 180;

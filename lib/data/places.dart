@@ -1,8 +1,3 @@
-// lib/data/places.dart
-//
-// Зургийн файлуудыг assets/images/ хавтсанд жижиг латин нэрээр хуулна
-// (terelj.jpg, khuvsgul.jpg ...). Зураг байхгүй бол апп-д дүрс харагдана.
-// Зай — Улаанбаатараас шулуун зай (Haversine), авто замаас богино.
 import '../models/place.dart';
 
 const seasons = ['Хавар', 'Зун', 'Намар', 'Өвөл'];

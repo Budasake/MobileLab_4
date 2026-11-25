@@ -1,7 +1,5 @@
-// lib/screens/detail_screen.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../models/picked_location.dart';
 import '../models/place.dart';
 import '../state/ratings.dart';
@@ -24,7 +22,6 @@ class DetailScreen extends StatelessWidget {
       );
 }
 
-/// Scaffold-гүй хэсэг — master–detail дотор дахин ашиглагдана.
 class PlaceDetailView extends StatelessWidget {
   const PlaceDetailView({super.key, required this.place});
 
@@ -180,12 +177,12 @@ class PlaceDetailView extends StatelessWidget {
 
     return ListView(
       children: [
-        imageSection, // 1
-        rateSection, // 2
-        seasonSection, // 4
-        locationSection, // 5
-        descriptionSection, // 6
-        statsSection, // 3
+        imageSection,
+        rateSection,
+        seasonSection, 
+        locationSection, 
+        descriptionSection, 
+        statsSection, 
       ],
     );
   }

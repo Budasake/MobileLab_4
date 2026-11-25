@@ -1,7 +1,4 @@
-// lib/utils/season.dart
 import 'package:flutter/material.dart';
-
-/// Улирал бүрийн дүрс, өнгө, шинж чанар.
 class SeasonStyle {
   const SeasonStyle({
     required this.icon,
@@ -13,7 +10,7 @@ class SeasonStyle {
 
   final IconData icon;
   final Color color;
-  final String temperature; // Монголын ойролцоо дундаж
+  final String temperature; 
   final String activities;
   final String tip;
 }

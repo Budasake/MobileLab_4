@@ -1,4 +1,3 @@
-// lib/screens/change_password_screen.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -20,7 +19,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   final _next = TextEditingController();
   final _confirm = TextEditingController();
   bool _saving = false;
-  String? _currentError; // серверээс ирсэн алдаа
+  String? _currentError; 
 
   @override
   void dispose() {
@@ -94,7 +93,6 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 return null;
               },
             ),
-            // Нууц үгийн хүч: сул / дунд / хүчтэй
             ListenableBuilder(
               listenable: _next,
               builder: (context, _) {

@@ -1,7 +1,5 @@
-// lib/utils/validators.dart
 import 'package:flutter/material.dart';
 
-/// Нууц үгийн үндсэн шаардлага: 8+ тэмдэгт, дор хаяж нэг үсэг ба нэг тоо.
 String? validateNewPassword(String? v) {
   final p = v ?? '';
   if (p.length < 8) return 'Хамгийн багадаа 8 тэмдэгт';
@@ -15,7 +13,6 @@ String? validateNewPassword(String? v) {
 
 enum PasswordStrength { empty, weak, medium, strong }
 
-/// Нууц үгийн хүч: урт, жижиг/том үсэг, тоо, тусгай тэмдэгтээр оноо өгнө.
 PasswordStrength passwordStrength(String p) {
   if (p.isEmpty) return PasswordStrength.empty;
   var score = 0;

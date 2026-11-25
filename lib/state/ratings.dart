@@ -1,9 +1,6 @@
-// lib/state/ratings.dart
 import 'package:flutter/foundation.dart';
-
 import '../models/place.dart';
 
-/// Хэрэглэгчийн өгсөн үнэлгээ: газрын id → 1–5 од.
 final userRatings = ValueNotifier<Map<String, int>>({});
 
 void ratePlace(String placeId, int stars) {
@@ -13,7 +10,7 @@ void ratePlace(String placeId, int stars) {
 
 class RatingSummary {
   const RatingSummary(this.average, this.count, this.mine);
-  final double average; // 0 = үнэлгээгүй
+  final double average; 
   final int count;
   final int? mine;
 
@@ -21,7 +18,6 @@ class RatingSummary {
   String get label => average.toStringAsFixed(1);
 }
 
-/// (дундаж × тоо + миний од) / (тоо + 1)
 RatingSummary ratingOf(Place place, [Map<String, int>? ratings]) {
   final mine = (ratings ?? userRatings.value)[place.id];
   final baseCount = place.rating > 0 ? place.ratingCount : 0;

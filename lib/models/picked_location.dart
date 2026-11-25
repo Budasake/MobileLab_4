@@ -1,7 +1,5 @@
-// lib/models/picked_location.dart
 import '../utils/geo.dart';
 
-/// Газрын зургаас сонгосон байршил: координат ба хаягийн мэдээлэл.
 class PickedLocation {
   const PickedLocation({
     required this.latitude,

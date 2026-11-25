@@ -1,4 +1,3 @@
-// lib/models/place.dart
 import 'dart:typed_data';
 import 'package:flutter/widgets.dart';
 
@@ -21,15 +20,15 @@ class Place {
   final String id;
   final String name;
   final String region;
-  final String image; // 'assets/images/...'
+  final String image; 
   final String description;
-  final double rating; // анхны дундаж үнэлгээ 0–5; 0 = үнэлгээгүй
+  final double rating;
   final int ratingCount;
-  final int distanceKm; // Улаанбаатараас (шулуун зай); 0 = тодорхойгүй
-  final String bestSeason; // 'Хавар' | 'Зун' | 'Намар' | 'Өвөл'
+  final int distanceKm; 
+  final String bestSeason; 
   final double? latitude;
   final double? longitude;
-  final Uint8List? imageBytes; // хэрэглэгчийн оруулсан зураг
+  final Uint8List? imageBytes;
 
   bool get hasLocation => latitude != null && longitude != null;
 

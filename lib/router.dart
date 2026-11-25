@@ -1,7 +1,5 @@
-// lib/router.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import 'data/places.dart';
 import 'screens/add_place_screen.dart';
 import 'screens/change_password_screen.dart';
@@ -17,7 +15,7 @@ import 'widgets/app_shell.dart';
 
 final router = GoRouter(
   initialLocation: '/places',
-  refreshListenable: auth, // нэвтрэх/гарахад redirect дахин ажиллана
+  refreshListenable: auth,
   redirect: (context, state) {
     final onLogin = state.matchedLocation == '/login';
     if (!auth.loggedIn) return onLogin ? null : '/login';
