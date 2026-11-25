@@ -1,0 +1,151 @@
+// lib/data/places.dart
+//
+// Зургийн файлуудыг assets/images/ хавтсанд жижиг латин нэрээр хуулна
+// (terelj.jpg, khuvsgul.jpg ...). Зураг байхгүй бол апп-д дүрс харагдана.
+// Зай — Улаанбаатараас шулуун зай (Haversine), авто замаас богино.
+import '../models/place.dart';
+
+const seasons = ['Хавар', 'Зун', 'Намар', 'Өвөл'];
+
+final places = <Place>[
+  const Place(
+    id: 'terelj',
+    name: 'Горхи-Тэрэлж',
+    region: 'Төв аймаг',
+    image: 'assets/images/terelj.jpg',
+    description: 'Хадан цохио, ой мод бүхий байгалийн цогцолборт газар. '
+        'Мэлхий хад, Арьяабал хийд зэрэг үзвэртэй.',
+    rating: 4.7,
+    ratingCount: 128,
+    distanceKm: 38,
+    bestSeason: 'Зун',
+    latitude: 47.9071,
+    longitude: 107.4209,
+  ),
+  const Place(
+    id: 'khuvsgul',
+    name: 'Хөвсгөл нуур',
+    region: 'Хөвсгөл аймаг',
+    image: 'assets/images/khuvsgul.jpg',
+    description: 'Монголын хамгийн гүн, цэнгэг устай нуур. '
+        'Эргэн тойрон тайга ой, уул нуруугаар хүрээлэгдсэн.',
+    rating: 4.9,
+    ratingCount: 214,
+    distanceKm: 576,
+    bestSeason: 'Зун',
+    latitude: 51.0,
+    longitude: 100.5,
+  ),
+  const Place(
+    id: 'khongor',
+    name: 'Хонгорын элс',
+    region: 'Өмнөговь аймаг',
+    image: 'assets/images/khongor.jpg',
+    description: 'Говийн хамгийн том элсэн манхан. Зуны улиралд тэмээгээр '
+        'аялж, манхан дээрээс нар жаргахыг үзнэ.',
+    rating: 4.8,
+    ratingCount: 175,
+    distanceKm: 586,
+    bestSeason: 'Хавар',
+    latitude: 43.7740,
+    longitude: 102.2310,
+  ),
+  const Place(
+    id: 'kharkhorin',
+    name: 'Хархорин',
+    region: 'Өвөрхангай аймаг',
+    image: 'assets/images/kharkhorin.jpg',
+    description: 'Эзэнт гүрний эртний нийслэл. Эрдэнэ Зуу хийд, '
+        'Орхоны хөндийн соёлын дурсгалт газар.',
+    rating: 4.6,
+    ratingCount: 143,
+    distanceKm: 317,
+    bestSeason: 'Намар',
+    latitude: 47.1986,
+    longitude: 102.8244,
+  ),
+  const Place(
+    id: 'altai',
+    name: 'Алтай Таван Богд',
+    region: 'Баян-Өлгий аймаг',
+    image: 'assets/images/altai.jpg',
+    description: 'Монголын хамгийн өндөр оргил Хүйтэн (4374 м), '
+        'мөнх цас, мөсөн голтой үндэсний цогцолборт газар.',
+    rating: 4.8,
+    ratingCount: 96,
+    distanceKm: 1409,
+    bestSeason: 'Өвөл',
+    latitude: 49.1667,
+    longitude: 87.8167,
+  ),
+  const Place(
+    id: 'orkhon',
+    name: 'Орхоны хүрхрээ',
+    region: 'Өвөрхангай аймаг',
+    image: 'assets/images/orkhon.jpg',
+    description: 'Улаан цутгалан хэмээх 20 орчим метрийн өндөр ус '
+        'үсрэлт, галт уулын хад чулуутай хөндий.',
+    rating: 4.7,
+    ratingCount: 112,
+    distanceKm: 392,
+    bestSeason: 'Намар',
+    latitude: 46.7933,
+    longitude: 101.9833,
+  ),
+  const Place(
+    id: 'tsagaan_suvarga',
+    name: 'Цагаан суварга',
+    region: 'Дундговь аймаг',
+    image: 'assets/images/tsagaan_suvarga.jpg',
+    description: 'Говийн голд орших үелэн өнгөт, цагаан шохойн хадан '
+        'хэлбэртэй, дэлхийн өвийн нэр дэвшигч тогтоц.',
+    rating: 4.5,
+    ratingCount: 81,
+    distanceKm: 385,
+    bestSeason: 'Хавар',
+    latitude: 44.6900,
+    longitude: 105.1200,
+  ),
+  const Place(
+    id: 'yol',
+    name: 'Ёлын ам',
+    region: 'Өмнөговь аймаг',
+    image: 'assets/images/yol.jpg',
+    description: 'Говийн Гурван Сайханы нурууны нарийн хавцал. '
+        'Хавцлын ёроолд зуны дунд хүртэл мөс хайлдаггүй.',
+    rating: 4.6,
+    ratingCount: 104,
+    distanceKm: 539,
+    bestSeason: 'Өвөл',
+    latitude: 43.5006,
+    longitude: 104.0653,
+  ),
+  const Place(
+    id: 'khorgo',
+    name: 'Хорго, Тэрхийн цагаан нуур',
+    region: 'Архангай аймаг',
+    image: 'assets/images/khorgo.jpg',
+    description: 'Унтарсан галт уул, хад чулуу, лавын талбай бүхий '
+        'нуур, байгалийн цогцолборт газар.',
+    rating: 4.7,
+    ratingCount: 90,
+    distanceKm: 536,
+    bestSeason: 'Намар',
+    latitude: 48.1667,
+    longitude: 99.7167,
+  ),
+  const Place(
+    id: 'bayanzag',
+    name: 'Баянзаг (Улаан цав)',
+    region: 'Өмнөговь аймаг',
+    image: 'assets/images/bayanzag.jpg',
+    description: 'Динозаврын олдвороороо алдартай улаан хадан тогтоц, '
+        'саксаулын ой.',
+    rating: 4.5,
+    ratingCount: 77,
+    distanceKm: 487,
+    bestSeason: 'Зун',
+    latitude: 44.1347,
+    longitude: 103.7292,
+  ),
+];
